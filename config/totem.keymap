@@ -41,23 +41,36 @@
 
 / {
     behaviors {
-        hm: homerow_mods {
+        hrm_l: hrm_l {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HRM_L";
+            bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings =
-                <&kp>,
-                <&kp>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <15 26 27 16 5 6 7 28 17 8 18 29 30 19 9 31 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31>;
+        };
+
+        hrm_r: hrm_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_R";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25>;
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -65,73 +78,62 @@
         Base {
             label = "Base";
             bindings = <
-                   &kp Q       &kp W          &kp E         &kp R      &kp T    &kp Y        &kp U        &kp I       &kp O               &kp P
-              &hm LGUI A  &hm LALT S    &hm LCTRL D  &hm LSHIFT F      &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
-&lt 3 ESCAPE       &kp Z       &kp X          &kp C         &kp V      &kp B    &kp N        &kp M    &kp COMMA     &kp DOT           &kp SLASH  &lt 4 APOSTROPHE
-                                      &mt LCTRL DEL     &lt 1 TAB  &kp SPACE  &kp RET   &lt 2 BSPC    &kp MINUS
+                   &kp Q          &kp W          &kp F           &kp P            &kp B      &kp J        &kp L           &kp U           &kp Y          &kp SQT
+                   &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHIFT T  &kp G      &kp M        &hrm_r RSHFT N  &hrm_r RCTRL E  &hrm_r RALT I  &hrm_r RGUI O
+&mt LSHIFT ESCAPE  &lt 5 Z        &kp X          &kp C           &kp D            &kp V      &kp K        &kp H           &kp COMMA       &kp DOT        &lt 5 SLASH    &mt RCTRL SQT
+                                                 &lt 4 ESC       &lt 2 SPACE      &kp TAB    &lt 3 ENTER  &lt 2 BSPC      &lt 1 DEL
             >;
+        };
+
+        Media {
+            bindings = <
+        &trans  &trans  &trans      &trans            &trans        &trans          &trans        &trans           &trans      &trans
+        &trans  &trans  &trans      &trans            &trans        &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT  &trans
+&trans  &trans  &trans  &trans      &trans            &trans        &trans          &trans        &trans           &trans      &trans  &trans
+                        &kp C_MUTE  &kp C_PLAY_PAUSE  &kp C_STOP    &trans          &trans        &trans
+            >;
+
+            label = "Media";
         };
 
         Nav {
             label = "Nav";
             bindings = <
-                      &trans       &trans  &kp UP_ARROW     &trans  &kp LBRC  &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9         &kp PLUS
-              &kp LEFT_SHIFT     &kp LEFT      &kp DOWN  &kp RIGHT  &kp LBKT  &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6        &kp MINUS
-&kp LEFT_ALT          &trans  &kp PAGE_UP        &trans  &kp PG_DN  &kp LPAR  &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
-                                                 &trans     &trans    &trans    &trans        &trans  &kp NUMBER_0
+              &trans          &kp HOME     &kp UP_ARROW  &kp END    &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+              &kp LEFT_SHIFT  &kp LEFT     &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&kp LEFT_ALT  &trans          &kp PAGE_UP  &trans        &kp PG_DN  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
+                                           &trans        &trans     &trans      &trans    &trans        &kp NUMBER_0
             >;
         };
 
         Sym {
             label = "Sym";
             bindings = <
-        &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT    &kp DQT
-          &trans  &trans    &trans      &trans       &trans     &trans         &trans           &trans   &trans     &trans
-&trans    &trans  &trans    &trans      &trans       &trans  &kp UNDER      &kp EQUAL           &trans   &trans  &kp SLASH  &kp HOME
-                            &trans      &trans       &trans     &trans         &trans           &trans
+        &trans  &kp AT     &kp HASH       &kp DOLLAR       &kp PERCENT    &trans  &trans  &trans  &trans  &trans
+        &trans  &kp CARET  &kp ASTERISK   &kp EXCLAMATION  &kp EQUAL      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &kp AMPERSAND  &kp UNDER        &trans         &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans         &trans           &trans         &trans  &trans  &trans
             >;
         };
 
         Fun {
             label = "Fun";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp F1
-        &trans  &trans  &trans  &trans   &to 5  &trans  &trans  &trans  &trans  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F20  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         Button {
             label = "Button";
             bindings = <
-                    &bt BT_CLR    &trans     &trans      &trans  &bt BT_SEL 0      &trans            &trans      &trans  &bootloader    &trans
-                      &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &bt BT_SEL 1      &trans        &kp RSHIFT   &kp RCTRL     &kp RALT  &kp RGUI
-&bootloader  &ext_power EP_TOG    &trans     &trans      &trans  &bt BT_SEL 2      &trans            &trans      &trans       &trans    &trans  &trans
-                                             &trans      &trans        &trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT
+             &bt BT_CLR         &trans    &trans     &trans      &bt BT_SEL 0    &trans  &trans      &trans     &bootloader  &trans
+             &kp LGUI           &kp LALT  &kp LCTRL  &kp LSHIFT  &bt BT_SEL 1    &trans  &kp RSHIFT  &kp RCTRL  &kp RALT     &kp RGUI
+&bootloader  &ext_power EP_TOG  &trans    &trans     &trans      &bt BT_SEL 2    &trans  &trans      &trans     &trans       &trans    &trans
+                                          &trans     &trans      &trans          &trans  &trans      &trans
             >;
-        };
-
-        Gaming {
-            bindings = <
-            &trans  &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-             &kp A   &kp S      &kp D         &kp F   &mo 6  &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE  &trans  &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                            &kp LCTRL  &kp LEFT_ALT  &trans  &trans  &trans  &trans
-            >;
-
-            label = "Gaming";
-        };
-
-        Gaming+ {
-            bindings = <
-         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &trans  &trans  &kp LC(RA(DEL))
-                &kp L         &kp O         &kp Y         &kp K         &kp G  &kp F5  &trans  &trans  &trans           &trans
-&kp TAB         &to 0        &trans        &trans  &kp NUMBER_6  &kp NUMBER_7  &trans  &trans  &trans  &trans           &trans  &kp LA(F4)
-                                            &kp J         &kp I         &kp M  &trans  &trans  &trans
-            >;
-
-            label = "Gaming+";
         };
     };
 };
