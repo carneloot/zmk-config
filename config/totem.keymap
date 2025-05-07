@@ -78,19 +78,19 @@
         Base {
             label = "Base";
             bindings = <
-                   &kp Q          &kp W          &kp F           &kp P            &kp B      &kp J        &kp L           &kp U           &kp Y          &kp SQT
-                   &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHIFT T  &kp G      &kp M        &hrm_r RSHFT N  &hrm_r RCTRL E  &hrm_r RALT I  &hrm_r RGUI O
-&mt LSHIFT ESCAPE  &lt 5 Z        &kp X          &kp C           &kp D            &kp V      &kp K        &kp H           &kp COMMA       &kp DOT        &lt 5 SLASH    &mt RCTRL SQT
-                                                 &lt 4 ESC       &lt 2 SPACE      &kp TAB    &lt 3 ENTER  &lt 2 BSPC      &lt 1 DEL
+                   &kp Q          &kp W          &kp F           &kp P            &kp B        &kp J        &kp L           &kp U           &kp Y          &kp SQT
+                   &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHIFT T  &kp G        &kp M        &hrm_r RSHFT N  &hrm_r RCTRL E  &hrm_r RALT I  &hrm_r RGUI O
+&mt LSHIFT ESCAPE  &lt 5 Z        &kp X          &kp C           &kp D            &kp V        &kp K        &kp H           &kp COMMA       &kp DOT        &lt 5 SLASH    &mt RCTRL SQT
+                                                 &lt 4 ESC       &lt 2 SPACE      &lt 1 TAB    &lt 3 ENTER  &lt 2 BSPC      &kp DELETE
             >;
         };
 
         Media {
             bindings = <
-        &trans  &trans  &trans      &trans            &trans        &kp K_CUT       &kp K_COPY    &kp K_PASTE      &trans      &trans
-        &trans  &trans  &trans      &trans            &trans        &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT  &trans
-&trans  &trans  &trans  &trans      &trans            &trans        &kp K_UNDO      &kp K_REDO    &trans           &trans      &trans  &trans
-                        &kp C_MUTE  &kp C_PLAY_PAUSE  &kp C_STOP    &trans          &trans        &trans
+        &trans  &trans  &trans  &trans  &trans    &kp K_CUT       &kp K_COPY        &kp K_PASTE      &trans      &trans
+        &trans  &trans  &trans  &trans  &trans    &kp C_PREVIOUS  &kp C_VOL_DN      &kp C_VOLUME_UP  &kp C_NEXT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp K_UNDO      &kp K_REDO        &trans           &trans      &trans  &trans
+                        &trans  &trans  &trans    &kp C_STOP      &kp C_PLAY_PAUSE  &kp C_MUTE
             >;
 
             label = "Media";
