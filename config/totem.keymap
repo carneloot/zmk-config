@@ -80,7 +80,7 @@
             bindings = <
                    &kp Q          &kp W          &kp F           &kp P            &kp B        &kp J        &kp L           &kp U           &kp Y          &kp SQT
                    &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHIFT T  &kp G        &kp M        &hrm_r RSHFT N  &hrm_r RCTRL E  &hrm_r RALT I  &hrm_r RGUI O
-&mt LSHIFT ESCAPE  &lt 5 Z        &kp X          &kp C           &kp D            &kp V        &kp K        &kp H           &kp COMMA       &kp DOT        &lt 5 SLASH    &mt RCTRL SQT
+&mt LSHIFT ESCAPE  &lt 5 Z        &kp X          &kp C           &kp D            &kp V        &kp K        &kp H           &kp COMMA       &kp DOT        &lt 5 SLASH    &mt RCTRL GRAVE
                                                  &lt 4 ESC       &lt 2 SPACE      &lt 1 TAB    &lt 3 ENTER  &lt 2 BSPC      &kp DELETE
             >;
         };
