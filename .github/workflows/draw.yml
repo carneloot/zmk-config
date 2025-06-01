@@ -1,6 +1,7 @@
 name: 'Draw keyboard'
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'config/totem.keymap'
@@ -9,7 +10,7 @@ on:
 
 jobs:
   draw:
-    uses: '/caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml'
+    uses: '/caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main'
     permissions:
       contents: write
     with:
