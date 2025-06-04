@@ -111,7 +111,7 @@
             bindings = <
         &trans  &kp AT     &kp HASH       &kp DOLLAR       &kp PERCENT    &trans  &trans  &trans  &trans  &trans
         &trans  &kp CARET  &kp ASTERISK   &kp EXCLAMATION  &kp EQUAL      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &kp AMPERSAND  &kp UNDER        &trans         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp COLON  &kp AMPERSAND  &kp UNDER        &trans         &trans  &trans  &trans  &trans  &trans  &trans
                            &trans         &trans           &trans         &trans  &trans  &trans
             >;
         };
