@@ -118,7 +118,7 @@ layers:
   - {t: ▽, type: trans}
   - '0'
   Sym:
-  - {t: ▽, type: trans}
+  - \
   - '@'
   - '#'
   - $
@@ -128,7 +128,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '|'
   - ^
   - '*'
   - ;
