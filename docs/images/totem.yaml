@@ -234,3 +234,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [7, 8]
+  k: Ctl+Gui+RIGHT
+- p: [7, 6]
+  k: Ctl+Gui+LEFT
