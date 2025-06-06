@@ -237,5 +237,7 @@ layers:
 combos:
 - p: [7, 8]
   k: Ctl+Gui+RIGHT
+  l: [Base]
 - p: [7, 6]
   k: Ctl+Gui+LEFT
+  l: [Base]
