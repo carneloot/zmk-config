@@ -70,7 +70,19 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        change-screen-r {
+            bindings = <&kp LC(LG(RIGHT))>;
+            key-positions = <7 8>;
+        };
+
+        change-screen-l {
+            bindings = <&kp LC(LG(LEFT))>;
+            key-positions = <7 6>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
