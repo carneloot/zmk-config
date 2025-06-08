@@ -255,8 +255,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ESC
   - LCTRL
+  - ESC
   - Z
   - X
   - C
@@ -267,9 +267,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: Base, h: toggle}
-  - H
-  - SPACE
   - LALT
+  - SPACE
+  - H
   - {t: ▽, type: trans}
   - BACKSPACE
   - {t: ▽, type: trans}
