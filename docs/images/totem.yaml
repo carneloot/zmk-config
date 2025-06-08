@@ -269,7 +269,7 @@ layers:
   - {t: Base, h: toggle}
   - LALT
   - SPACE
-  - H
+  - {t: H, h: '`'}
   - {t: ▽, type: trans}
   - BACKSPACE
   - {t: ▽, type: trans}
