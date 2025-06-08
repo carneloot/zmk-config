@@ -201,7 +201,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BT, h: '0'}
-  - {t: ▽, type: trans}
+  - {t: Gaming, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
@@ -234,6 +234,45 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Gaming:
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - LSHFT
+  - A
+  - S
+  - D
+  - F
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ESC
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - N
+  - M
+  - ','
+  - .
+  - {t: /, h: Button}
+  - ''
+  - ''
+  - SPACE
+  - LALT
+  - ''
+  - ''
+  - ''
 combos:
 - p: [7, 8]
   k: Ctl+Gui+RIGHT
