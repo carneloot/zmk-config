@@ -143,10 +143,19 @@
         Button {
             label = "Button";
             bindings = <
-             &bt BT_CLR         &trans    &trans     &trans      &bt BT_SEL 0    &trans  &trans      &trans     &bootloader  &trans
+             &bt BT_CLR         &trans    &trans     &trans      &bt BT_SEL 0    &tog 6  &trans      &trans     &bootloader  &trans
              &kp LGUI           &kp LALT  &kp LCTRL  &kp LSHIFT  &bt BT_SEL 1    &trans  &kp RSHIFT  &kp RCTRL  &kp RALT     &kp RGUI
 &bootloader  &ext_power EP_TOG  &trans    &trans     &trans      &bt BT_SEL 2    &trans  &trans      &trans     &trans       &trans    &trans
                                           &trans     &trans      &trans          &trans  &trans      &trans
+            >;
+        };
+
+        Gaming {
+            bindings = <
+         &kp TAB    &kp Q  &kp W  &kp E      &kp R       &kp Y  &kp U  &kp I      &kp O    &kp P
+         &kp LSHFT  &kp A  &kp S  &kp D      &kp F       &kp H  &kp J  &kp K      &kp L    &kp SEMI
+&kp ESC  &kp LCTRL  &kp Z  &kp X  &kp C      &kp V       &kp N  &kp M  &kp COMMA  &kp DOT  &lt 5 SLASH  &none
+                           &none  &kp SPACE  &kp LALT    &none  &none  &none
             >;
         };
     };
