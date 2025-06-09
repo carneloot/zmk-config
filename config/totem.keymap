@@ -84,6 +84,12 @@
             key-positions = <7 6>;
             layers = <2>;
         };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
     };
 
     keymap {
