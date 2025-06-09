@@ -313,8 +313,8 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(596, 236)" class="key keypos-37">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DELETE</text>
-<a href="#Commands">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 88%">Commands</tspan></text>
+<a href="#Cmds">
+<text x="0" y="24" class="key hold layer-activator">Cmds</text>
 </a></g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="595" y="29" width="28" height="26" class="combo"/>
@@ -1142,8 +1142,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 2193)" class="layer-Commands">
-<text x="0" y="28" class="label" id="Commands">Commands:</text>
+<g transform="translate(30, 2193)" class="layer-Cmds">
+<text x="0" y="28" class="label" id="Cmds">Cmds:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(78, 113) rotate(-10.0)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
@@ -1219,9 +1219,9 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Ctl+V</text>
 </g>
-<g transform="translate(703, 118) rotate(4.0)" class="key trans keypos-18">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(703, 118) rotate(4.0)" class="key keypos-18">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Ctl+S</text>
 </g>
 <g transform="translate(764, 168) rotate(10.0)" class="key trans keypos-19">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
