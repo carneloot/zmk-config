@@ -19,7 +19,7 @@ layers:
   - M
   - {t: N, h: RSHFT}
   - {t: E, h: RCTRL}
-  - {t: I, h: RALT}
+  - {t: I, h: LALT}
   - {t: O, h: RGUI}
   - {t: ESCAPE, h: LSHIFT}
   - {t: Z, h: Button}
