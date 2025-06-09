@@ -101,7 +101,7 @@
                    &kp Q          &kp W          &kp F           &kp P            &kp B        &kp J        &kp L           &kp U           &kp Y          &kp SQT
                    &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHIFT T  &kp G        &kp M        &hrm_r RSHFT N  &hrm_r RCTRL E  &hrm_r RALT I  &hrm_r RGUI O
 &mt LSHIFT ESCAPE  &lt 5 Z        &kp X          &kp C           &kp D            &kp V        &kp K        &kp H           &kp COMMA       &kp DOT        &lt 5 SLASH    &mt RCTRL GRAVE
-                                                 &lt 4 ESC       &lt 2 SPACE      &lt 1 TAB    &lt 3 ENTER  &lt 2 BSPC      &kp DELETE
+                                                 &lt 4 ESC       &lt 2 SPACE      &lt 1 TAB    &lt 3 ENTER  &lt 2 BSPC      &lt 6 DELETE
             >;
         };
 
@@ -149,10 +149,19 @@
         Button {
             label = "Button";
             bindings = <
-             &bt BT_CLR         &trans    &trans     &trans      &bt BT_SEL 0    &to 0   &to 6       &trans     &bootloader  &trans
+             &bt BT_CLR         &trans    &trans     &trans      &bt BT_SEL 0    &to 0   &to 7       &trans     &bootloader  &trans
              &kp LGUI           &kp LALT  &kp LCTRL  &kp LSHIFT  &bt BT_SEL 1    &trans  &kp RSHIFT  &kp RCTRL  &kp RALT     &kp RGUI
 &bootloader  &ext_power EP_TOG  &trans    &trans     &trans      &bt BT_SEL 2    &trans  &trans      &trans     &trans       &trans    &trans
                                           &trans     &trans      &trans          &trans  &trans      &trans
+            >;
+        };
+
+        Commands {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp LC(Z)  &kp LC(LS(Z))  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp LC(C)  &kp LC(V)      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans         &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans     &trans
             >;
         };
 
