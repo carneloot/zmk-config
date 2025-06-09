@@ -280,3 +280,6 @@ combos:
 - p: [7, 6]
   k: Ctl+Gui+LEFT
   l: [Nav]
+- p: [6, 7]
+  k: '~'
+  l: [Base]
