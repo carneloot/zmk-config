@@ -90,6 +90,48 @@
             key-positions = <6 7>;
             layers = <0>;
         };
+
+        move-window-r {
+            bindings = <&kp LG(LS(RIGHT))>;
+            key-positions = <28 29>;
+            layers = <2>;
+        };
+
+        move-window-l {
+            bindings = <&kp LG(LS(LEFT))>;
+            key-positions = <27 28>;
+            layers = <2>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        cedilha {
+            bindings = <&kp RA(COMMA)>;
+            key-positions = <23 24>;
+            layers = <0>;
+        };
+
+        move-workspace-r {
+            bindings = <&kp LG(LS(PAGE_DOWN))>;
+            key-positions = <3 2>;
+            layers = <2>;
+        };
+
+        move-workspace-l {
+            bindings = <&kp LG(LS(PAGE_UP))>;
+            key-positions = <2 1>;
+            layers = <2>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
     };
 
     keymap {
