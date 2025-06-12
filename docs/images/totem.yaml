@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SCROLLLOCK
+  - INS
   - F4
   - F5
   - F6
@@ -188,7 +188,7 @@ layers:
   - F2
   - F3
   - F12
-  - {t: ▽, type: trans}
+  - SCROLLLOCK
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
