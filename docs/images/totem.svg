@@ -320,6 +320,18 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="595" y="29" width="28" height="26" class="combo"/>
 <text x="609" y="42" class="combo tap">~</text>
 </g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="659" y="32" width="28" height="26" class="combo"/>
+<text x="673" y="45" class="combo tap">`</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="228" y="141" width="28" height="26" class="combo"/>
+<text x="242" y="154" class="combo tap">AltGr+,</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="228" y="29" width="28" height="26" class="combo"/>
+<text x="242" y="42" class="combo tap">:</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 366)" class="layer-Media">
@@ -656,6 +668,30 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="595" y="29" width="28" height="26" class="combo"/>
 <text x="609" y="42" class="combo tap">
 <tspan x="609" dy="-0.6em">Ctl+Gui</tspan><tspan x="609" dy="1.2em">+LEFT</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="655" y="144" width="28" height="26" class="combo"/>
+<text x="669" y="157" class="combo tap">
+<tspan x="669" dy="-0.6em">Gui+Sft</tspan><tspan x="669" dy="1.2em">+RIGHT</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="595" y="141" width="28" height="26" class="combo"/>
+<text x="609" y="154" class="combo tap">
+<tspan x="609" dy="-0.6em">Gui+Sft</tspan><tspan x="609" dy="1.2em">+LEFT</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="228" y="29" width="28" height="26" class="combo"/>
+<text x="242" y="42" class="combo tap">
+<tspan x="242" dy="-0.6em" style="font-size: 64%">Gui+Sft+PA…</tspan><tspan x="242" dy="1.2em" style="font-size: 64%">DOWN</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="164" y="32" width="28" height="26" class="combo"/>
+<text x="178" y="45" class="combo tap">
+<tspan x="178" dy="-0.6em" style="font-size: 64%">Gui+Sft+PA…</tspan><tspan x="178" dy="1.2em" style="font-size: 64%">UP</tspan>
 </text>
 </g>
 </g>
