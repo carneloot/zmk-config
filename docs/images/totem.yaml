@@ -21,7 +21,7 @@ layers:
   - {t: E, h: RCTRL}
   - {t: I, h: LALT}
   - {t: O, h: RGUI}
-  - {t: ESCAPE, h: LSHIFT}
+  - {t: LEFT GUI, h: LSHIFT}
   - {t: Z, h: Button}
   - X
   - C
