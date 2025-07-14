@@ -132,6 +132,12 @@
             key-positions = <2 3>;
             layers = <0>;
         };
+
+        quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <2 1>;
+            layers = <0>;
+        };
     };
 
     keymap {
