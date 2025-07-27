@@ -66,9 +66,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Ctl+Z
   - Sft+Ctl+Z
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -83,8 +83,8 @@ layers:
   - HOME
   - UP ARROW
   - END
-  - '{'
-  - '}'
+  - ''''
+  - ''''
   - '7'
   - '8'
   - '9'
@@ -93,8 +93,8 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - '['
-  - ']'
+  - '`'
+  - '`'
   - '4'
   - '5'
   - '6'
@@ -104,8 +104,8 @@ layers:
   - PAGE UP
   - ''
   - PG DN
-  - (
-  - )
+  - ''
+  - ''
   - '1'
   - '2'
   - '3'
@@ -120,18 +120,18 @@ layers:
   Sym:
   - {t: ▽, type: trans}
   - \
-  - '*'
-  - '&'
+  - '{'
+  - '}'
   - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '|'
-  - ^
-  - '%'
-  - $
+  - (
+  - )
   - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -140,9 +140,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '#'
-  - '@'
-  - '!'
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
   - _
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -206,16 +206,16 @@ layers:
   - {t: ▽, type: trans}
   - '&bootloader'
   - {t: ▽, type: trans}
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: BT, h: '1'}
   - {t: ▽, type: trans}
-  - RSHIFT
-  - RCTRL
-  - RALT
-  - RGUI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&bootloader'
   - {t: EP TOG, type: held}
   - {t: ▽, type: trans}
