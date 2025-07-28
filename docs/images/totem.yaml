@@ -42,9 +42,9 @@ layers:
   Media:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+V
+  - Ctl+C
+  - Ctl+X
   - Ctl+X
   - Ctl+C
   - Ctl+V
