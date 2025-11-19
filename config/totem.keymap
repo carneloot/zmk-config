@@ -199,7 +199,7 @@
             bindings = <
              &bt BT_CLR         &trans  &trans  &trans  &bt BT_SEL 0    &trans  &trans  &trans  &bootloader  &trans
              &trans             &trans  &trans  &trans  &bt BT_SEL 1    &trans  &trans  &trans  &trans       &trans
-&bootloader  &ext_power EP_TOG  &trans  &trans  &trans  &bt BT_SEL 2    &trans  &to 0   &to 7   &trans       &trans  &trans
+&bootloader  &ext_power EP_TOG  &trans  &trans  &trans  &bt BT_SEL 2    &trans  &to 0   &to 7   &to 8        &trans  &trans
                                         &trans  &trans  &trans          &trans  &trans  &trans
             >;
         };
@@ -219,6 +219,24 @@
            &kp LSHFT  &kp A  &kp S     &kp D      &kp F          &trans  &trans         &trans  &trans  &trans
 &kp LCTRL  &kp ESC    &kp Z  &kp X     &kp C      &kp V          &trans  &trans         &trans  &trans  &trans  &to 0
                              &kp LALT  &kp SPACE  &mt GRAVE H    &trans  &kp BACKSPACE  &trans
+            >;
+        };
+
+        LoL {
+            bindings = <
+            &kp TAB    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &trans  &trans         &trans  &trans  &trans
+            &kp LCTRL  &kp Q         &kp W         &kp E         &kp R           &trans  &trans         &trans  &trans  &trans
+&kp LSHIFT  &kp ESC    &kp A         &kp S         &kp D         &kp F           &trans  &trans         &trans  &trans  &trans  &to 0
+                                     &kp LALT      &kp SPACE     &sl 9           &trans  &kp BACKSPACE  &trans
+            >;
+        };
+
+        LoL2 {
+            bindings = <
+        &trans  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans        &kp O         &kp P         &kp T     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans        &trans        &trans    &trans  &trans  &trans
             >;
         };
     };
