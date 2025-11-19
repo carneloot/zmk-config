@@ -224,10 +224,10 @@
 
         LoL {
             bindings = <
-            &kp TAB    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &trans  &trans         &trans  &trans  &trans
-            &kp LCTRL  &kp Q         &kp W         &kp E         &kp R           &trans  &trans         &trans  &trans  &trans
-&kp LSHIFT  &kp ESC    &kp A         &kp S         &kp D         &kp F           &trans  &trans         &trans  &trans  &trans  &to 0
-                                     &kp LALT      &kp SPACE     &sl 9           &trans  &kp BACKSPACE  &trans
+         &kp TAB     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &trans  &trans         &trans  &trans  &trans
+         &kp LSHIFT  &kp Q         &kp W         &kp E         &kp R           &trans  &trans         &trans  &trans  &trans
+&kp ESC  &kp LCTRL   &kp A         &kp S         &kp D         &kp F           &trans  &trans         &trans  &trans  &trans  &to 0
+                                   &kp LALT      &kp SPACE     &sl 9           &trans  &kp BACKSPACE  &trans
             >;
         };
 
