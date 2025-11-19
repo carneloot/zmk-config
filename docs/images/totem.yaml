@@ -323,7 +323,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LCTRL
+  - LSHIFT
   - Q
   - W
   - E
@@ -333,8 +333,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LSHIFT
   - ESC
+  - LCTRL
   - A
   - S
   - D
