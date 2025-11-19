@@ -1046,17 +1046,13 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">BT</text>
 <text x="0" y="24" class="key hold">0</text>
 </g>
-<g transform="translate(520, 65)" class="key keypos-5">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<a href="#Base">
-<text x="0" y="0" class="key tap layer-activator">Base</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<g transform="translate(520, 65)" class="key trans keypos-5">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(580, 56)" class="key keypos-6">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<a href="#OW">
-<text x="0" y="0" class="key tap layer-activator">OW</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<g transform="translate(580, 56)" class="key trans keypos-6">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(639, 28)" class="key trans keypos-7">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
@@ -1142,13 +1138,17 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(580, 168)" class="key trans keypos-27">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(580, 168)" class="key keypos-27">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
+<a href="#Base">
+<text x="0" y="0" class="key tap layer-activator">Base</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
-<g transform="translate(639, 140)" class="key trans keypos-28">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(639, 140)" class="key keypos-28">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
+<a href="#OW">
+<text x="0" y="0" class="key tap layer-activator">OW</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(699, 174) rotate(4.0)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
