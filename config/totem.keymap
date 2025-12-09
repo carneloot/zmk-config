@@ -206,10 +206,10 @@
 
         Cmds {
             bindings = <
-        &trans  &trans  &trans  &trans      &trans    &trans  &kp LC(Z)  &kp LC(LS(Z))  &trans     &trans
-        &trans  &trans  &trans  &caps_word  &trans    &trans  &kp LC(C)  &kp LC(V)      &kp LC(S)  &trans
-&trans  &trans  &trans  &trans  &trans      &trans    &trans  &trans     &trans         &trans     &trans  &trans
-                        &trans  &trans      &trans    &trans  &trans     &trans
+        &trans  &trans  &trans            &trans      &trans    &trans  &kp LC(Z)  &kp LC(LS(Z))  &trans     &trans
+        &trans  &trans  &kp LC(LEFT_WIN)  &caps_word  &trans    &trans  &kp LC(C)  &kp LC(V)      &kp LC(S)  &trans
+&trans  &trans  &trans  &trans            &trans      &trans    &trans  &trans     &trans         &trans     &trans  &trans
+                        &trans            &trans      &trans    &trans  &trans     &trans
             >;
         };
 
