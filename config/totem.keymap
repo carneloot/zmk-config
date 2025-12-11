@@ -167,7 +167,7 @@
         Nav {
             label = "Nav";
             bindings = <
-        &trans  &kp HOME     &kp UP_ARROW  &kp END    &kp SINGLE_QUOTE    &kp KP_EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+        &trans  &kp HOME     &kp UP_ARROW  &kp END    &kp SINGLE_QUOTE    &kp EQUAL        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
         &trans  &kp LEFT     &kp DOWN      &kp RIGHT  &kp GRAVE           &kp KP_MULTIPLY  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
 &trans  &trans  &kp PAGE_UP  &none         &kp PG_DN  &none               &kp PERIOD       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE  &trans
                              &trans        &trans     &trans              &trans           &trans        &kp NUMBER_0
@@ -177,10 +177,10 @@
         Sym {
             label = "Sym";
             bindings = <
-        &trans  &kp BACKSLASH  &kp LEFT_BRACE           &kp RIGHT_BRACE           &kp SEMICOLON     &trans  &trans  &trans  &trans  &trans
-        &trans  &kp PIPE       &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS  &kp KP_EQUAL      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans         &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp UNDERSCORE    &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans                   &trans                    &trans            &trans  &trans  &trans
+        &trans  &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON    &trans  &trans  &trans  &trans  &trans
+        &trans  &kp PIPE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER        &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans                &trans                 &trans           &trans  &trans  &trans
             >;
         };
 
