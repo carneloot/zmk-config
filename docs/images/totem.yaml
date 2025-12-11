@@ -84,7 +84,7 @@ layers:
   - UP ARROW
   - END
   - ''''
-  - '='
+  - KP EQUAL
   - '7'
   - '8'
   - '9'
@@ -130,9 +130,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '|'
-  - (
-  - )
-  - '='
+  - KP LEFT PARENTHESIS
+  - KP RIGHT PARENTHESIS
+  - KP EQUAL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
