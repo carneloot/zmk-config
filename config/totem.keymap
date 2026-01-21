@@ -88,7 +88,7 @@
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <6 7>;
-            layers = <0>;
+            layers = <0 10>;
         };
 
         move-window-r {
@@ -106,13 +106,13 @@
         grave {
             bindings = <&kp GRAVE>;
             key-positions = <7 8>;
-            layers = <0>;
+            layers = <0 10>;
         };
 
         cedilha {
             bindings = <&kp RA(COMMA)>;
             key-positions = <23 24>;
-            layers = <0>;
+            layers = <0 10>;
         };
 
         move-workspace-r {
@@ -130,13 +130,13 @@
         colon {
             bindings = <&kp COLON>;
             key-positions = <2 3>;
-            layers = <0>;
+            layers = <0 10>;
         };
 
         quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <2 1>;
-            layers = <0>;
+            layers = <0 10>;
         };
     };
 
@@ -197,9 +197,9 @@
         Button {
             label = "Button";
             bindings = <
-             &bt BT_CLR         &trans  &trans  &trans  &bt BT_SEL 0    &trans  &trans  &trans  &bootloader  &trans
-             &trans             &trans  &trans  &trans  &bt BT_SEL 1    &trans  &trans  &trans  &trans       &trans
-&bootloader  &ext_power EP_TOG  &trans  &trans  &trans  &bt BT_SEL 2    &trans  &to 0   &to 7   &to 8        &trans  &trans
+             &bt BT_CLR         &trans  &trans  &trans  &bt BT_SEL 0    &trans  &trans  &trans  &trans  &bootloader
+             &trans             &trans  &trans  &trans  &bt BT_SEL 1    &trans  &to 10  &trans  &trans  &trans
+&bootloader  &ext_power EP_TOG  &trans  &trans  &trans  &bt BT_SEL 2    &trans  &to 0   &to 7   &to 8   &trans       &trans
                                         &trans  &trans  &trans          &trans  &trans  &trans
             >;
         };
@@ -237,6 +237,16 @@
         &trans  &trans        &kp O         &kp P         &kp T     &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
                               &trans        &trans        &trans    &trans  &trans  &trans
+            >;
+        };
+
+        qwerty {
+            label = "QWERTY";
+            bindings = <
+                     &kp Q          &kp W          &kp E           &kp R            &kp T        &kp Y        &kp U           &kp I           &kp O          &kp P
+                     &hrm_l LGUI A  &hrm_l LALT S  &hrm_l LCTRL D  &hrm_l LSHIFT F  &kp G        &kp H        &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r LALT L  &hrm_r RGUI SQT
+&mt LSHIFT LEFT_GUI  &lt 5 Z        &kp X          &kp C           &kp V            &kp B        &kp N        &kp M           &kp COMMA       &kp DOT        &lt 5 SLASH      &to 0
+                                                   &lt 4 ESC       &lt 2 SPACE      &lt 1 TAB    &lt 3 ENTER  &lt 2 BSPC      &lt 6 DELETE
             >;
         };
     };
