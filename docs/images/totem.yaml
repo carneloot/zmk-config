@@ -204,15 +204,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
   - {t: ▽, type: trans}
+  - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BT, h: '1'}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: QWERTY, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -390,6 +390,45 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  QWERTY:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHIFT}
+  - G
+  - H
+  - {t: J, h: RSHFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: LALT}
+  - {t: '''', h: RGUI}
+  - {t: LEFT GUI, h: LSHIFT}
+  - {t: Z, h: Button}
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: /, h: Button}
+  - {t: Base, h: toggle}
+  - {t: ESC, h: Fun}
+  - {t: SPACE, h: Nav}
+  - {t: TAB, h: Media}
+  - {t: ENTER, h: Sym}
+  - {t: BSPC, h: Nav}
+  - {t: DELETE, h: Cmds}
 combos:
 - p: [7, 8]
   k: Ctl+Gui+RIGHT
@@ -399,7 +438,7 @@ combos:
   l: [Nav]
 - p: [6, 7]
   k: '~'
-  l: [Base]
+  l: [Base, QWERTY]
 - p: [28, 29]
   k: Gui+Sft+RIGHT
   l: [Nav]
@@ -408,10 +447,10 @@ combos:
   l: [Nav]
 - p: [7, 8]
   k: '`'
-  l: [Base]
+  l: [Base, QWERTY]
 - p: [23, 24]
   k: AltGr+,
-  l: [Base]
+  l: [Base, QWERTY]
 - p: [3, 2]
   k: Gui+Sft+PAGE DOWN
   l: [Nav]
@@ -420,7 +459,7 @@ combos:
   l: [Nav]
 - p: [2, 3]
   k: ':'
-  l: [Base]
+  l: [Base, QWERTY]
 - p: [2, 1]
   k: ''''
-  l: [Base]
+  l: [Base, QWERTY]
