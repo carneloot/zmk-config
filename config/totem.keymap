@@ -148,7 +148,7 @@
             bindings = <
                      &kp Q          &kp W          &kp F           &kp P            &kp B        &kp J        &kp L           &kp U           &kp Y          &kp SQT
                      &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHIFT T  &kp G        &kp M        &hrm_r RSHFT N  &hrm_r RCTRL E  &hrm_r LALT I  &hrm_r RGUI O
-&mt LSHIFT LEFT_GUI  &lt 5 Z        &kp X          &kp C           &kp D            &kp V        &kp K        &kp H           &kp COMMA       &kp DOT        &lt 5 SLASH    &mt RCTRL GRAVE
+&mt LSHIFT LEFT_GUI  &lt 5 Z        &kp X          &kp C           &kp D            &kp V        &kp K        &kp H           &kp COMMA       &kp DOT        &lt 5 SLASH    &kp LA(LC(SPACE))
                                                    &lt 4 ESC       &lt 2 SPACE      &lt 1 TAB    &lt 3 ENTER  &lt 2 BSPC      &lt 6 DELETE
             >;
         };
@@ -206,10 +206,10 @@
 
         Cmds {
             bindings = <
-        &trans  &trans  &trans             &trans      &trans    &trans  &kp LC(Z)  &kp LC(LS(Z))  &trans     &trans
-        &trans  &trans  &kp LC(LA(SPACE))  &caps_word  &trans    &trans  &kp LC(C)  &kp LC(V)      &kp LC(S)  &trans
-&trans  &trans  &trans  &trans             &trans      &trans    &trans  &trans     &trans         &trans     &trans  &trans
-                        &trans             &trans      &trans    &trans  &trans     &trans
+        &trans  &trans  &trans             &trans        &trans    &trans  &kp LC(Z)  &kp LC(LS(Z))  &trans     &trans
+        &trans  &trans  &kp LC(LA(SPACE))  &kp CAPSLOCK  &trans    &trans  &kp LC(C)  &kp LC(V)      &kp LC(S)  &trans
+&trans  &trans  &trans  &trans             &trans        &trans    &trans  &trans     &trans         &trans     &trans  &trans
+                        &trans             &trans        &trans    &trans  &trans     &trans
             >;
         };
 
