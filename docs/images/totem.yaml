@@ -32,7 +32,7 @@ layers:
   - ','
   - .
   - {t: /, h: Button}
-  - {t: '`', h: RCTRL}
+  - Alt+Ctl+SPACE
   - {t: ESC, h: Fun}
   - {t: SPACE, h: Nav}
   - {t: TAB, h: Media}
@@ -248,7 +248,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+Alt+SPACE
-  - '&caps_word'
+  - CAPSLOCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+C
