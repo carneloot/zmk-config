@@ -65,6 +65,15 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
         };
+
+        lt_sym: lt_sym {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <0>;
+        };
     };
 
     combos {
@@ -146,7 +155,7 @@
                      &kp Q          &kp W          &kp F           &kp P            &kp B        &kp J        &kp L           &kp U           &kp Y          &kp SQT
                      &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHIFT T  &kp G        &kp M        &hrm_r RSHFT N  &hrm_r RCTRL E  &hrm_r LALT I  &hrm_r RGUI O
 &mt LSHIFT LEFT_GUI  &lt 5 Z        &kp X          &kp C           &kp D            &kp V        &kp K        &kp H           &kp COMMA       &kp DOT        &lt 5 SLASH    &kp LA(LC(SPACE))
-                                                   &lt 4 ESC       &lt 2 SPACE      &lt 1 TAB    &lt 3 ENTER  &lt 2 BSPC      &lt 6 DELETE
+                                                   &lt_sym 4 ESC   &lt 2 SPACE      &lt 1 TAB    &lt 3 ENTER  &lt 2 BSPC      &lt 6 DELETE
             >;
         };
 
@@ -243,7 +252,7 @@
                      &kp Q          &kp W          &kp E           &kp R            &kp T        &kp Y        &kp U           &kp I           &kp O          &kp P
                      &hrm_l LGUI A  &hrm_l LALT S  &hrm_l LCTRL D  &hrm_l LSHIFT F  &kp G        &kp H        &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r LALT L  &hrm_r RGUI SQT
 &mt LSHIFT LEFT_GUI  &lt 5 Z        &kp X          &kp C           &kp V            &kp B        &kp N        &kp M           &kp COMMA       &kp DOT        &lt 5 SLASH      &to 0
-                                                   &lt 4 ESC       &lt 2 SPACE      &lt 1 TAB    &lt 3 ENTER  &lt 2 BSPC      &lt 6 DELETE
+                                                   &lt_sym 4 ESC   &lt 2 SPACE      &lt 1 TAB    &lt 3 ENTER  &lt 2 BSPC      &lt 6 DELETE
             >;
         };
     };
