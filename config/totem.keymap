@@ -15,17 +15,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define Base        0
-#define Media       1
-#define Nav         2
-#define Mouse       3
-#define Sym         4
-#define Num         5
-#define Fun         6
-#define Button      7
-#define Game        8
-#define Gameplus    9
-
 &mt {
     quick-tap-ms = <100>;
     flavor = "tap-preferred";
@@ -74,6 +63,16 @@
             flavor = "hold-preferred";
             tapping-term-ms = <180>;
             quick-tap-ms = <0>;
+        };
+
+        lt_prefer_tap: lt_prefer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+
+            flavor = "tap-preferred";
+            tapping-term-ms = <240>;
+            quick-tap-ms = <150>;
         };
     };
 
@@ -155,7 +154,7 @@
             bindings = <
                      &kp Q          &kp W          &kp F           &kp P            &kp B        &kp J            &kp L           &kp U           &kp Y          &kp SQT
                      &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHIFT T  &kp G        &kp M            &hrm_r RSHFT N  &hrm_r RCTRL E  &hrm_r LALT I  &hrm_r RGUI O
-&mt LSHIFT LEFT_GUI  &lt 5 Z        &kp X          &kp C           &kp D            &kp V        &kp K            &kp H           &kp COMMA       &kp DOT        &lt 5 SLASH    &kp LA(LC(SPACE))
+&mt LSHIFT LEFT_GUI  &lt_prefer_tap 5 Z &kp X          &kp C           &kp D            &kp V        &kp K            &kp H           &kp COMMA       &kp DOT        &lt_prefer_tap 5 SLASH    &kp LA(LC(SPACE))
                                                    &lt 4 ESC       &lt 2 SPACE      &lt 1 TAB    &lt_sym 3 ENTER  &lt 2 BSPC      &lt 6 DELETE
             >;
         };
@@ -252,7 +251,7 @@
             bindings = <
                      &kp Q          &kp W          &kp E           &kp R            &kp T        &kp Y        &kp U           &kp I           &kp O          &kp P
                      &hrm_l LGUI A  &hrm_l LALT S  &hrm_l LCTRL D  &hrm_l LSHIFT F  &kp G        &kp H        &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r LALT L  &hrm_r RGUI SQT
-&mt LSHIFT LEFT_GUI  &lt 5 Z        &kp X          &kp C           &kp V            &kp B        &kp N        &kp M           &kp COMMA       &kp DOT        &lt 5 SLASH      &to 0
+&mt LSHIFT LEFT_GUI  &lt_prefer_tap 5 Z &kp X          &kp C           &kp V            &kp B        &kp N        &kp M           &kp COMMA       &kp DOT        &lt_prefer_tap 5 SLASH      &to 0
                                                    &lt_sym 4 ESC   &lt 2 SPACE      &lt 1 TAB    &lt 3 ENTER  &lt 2 BSPC      &lt 6 DELETE
             >;
         };
